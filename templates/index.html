@@ -18,6 +18,7 @@
       <a href="#">Connor Murphy</a>
     </div>
 
+
     <table class="clientTable" id="clientTable">
       <tr id = "headers">
         <th> LastName </th>
@@ -28,7 +29,30 @@
         <th> Zip </th>
         <th> DoB </th>
       </tr>
+    <tbody>
+      <?php
+        $servername="127.0.0.1";
+        $username="root";
+        $password="Nitrothegreat22!";
+        $db = "clientDB";
+
+        $cxn = mysqli($servername, $username, $password, $dbname);
+
+        $allData="SELECT * FROM Client";
+
+
+        for($row = 0; $row <= count($allData); $row++)
+        {
+          for($col = 0; $col <= count($row); $col++)
+          {
+            echo col
+          }
+          echo "\n"
+        }
+      ?>
+    </tbody>
     </table>
+
 
   </body>
 </html>
